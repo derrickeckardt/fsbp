@@ -50,4 +50,26 @@ account['member_no_dependents'] = config.get('ACCOUNT','MEMBER_NO_DEPENDENTS')
 for i in range(int(account['member_no_dependents'])):
     account['dependent_'+str(i+1)+'_name'] = config.get('ACCOUNT','DEPENDENT_'+str(i+1)+'_NAME')
 
-print(account)
+
+# Form for submitting online
+"""
+SUBMIT A CLAIM WITHOUT COMMENTS
+PLEASE SELECT THE NAME OF THE PERSON WHO THE CLAIM IS BEING FILED FOR, YEAR CLAIM WAS SERVICED AND ENTER THE CORRESPONDING FSBP MEMBER ID/LAST 4 OF THE SSN NUMBER. NEXT, BROWSE FOR THE DOCUMENT(S) YOU WISH TO UPLOAD AND CLICK "SUBMIT CLAIM" TO SEND YOUR CLAIM. NOTE: ALL PDF FILE SUBMISSIONS ARE CONVERTED TO GRAYSCALE. PLEASE MAKE SURE THE DOCUMENT UPLOADED IS IN PORTABLE DOCUMENT FORMAT (PDF).
+PLEASE FILL IN ALL MANDATORY FIELDS MARKED WITH AN ASTERISK (*)
+
+*This claim is for: 
+
+* Service year on Claim/Invoice:  2019 (1/1/2019 - 12/31/2019 )       2018 (1/1/2018 - 12/31/2018)
+
+*Please enter corresponding FSBP Member ID/or the last 4 of your SSN for Aetna identification: 
+
+*Diagnosis or Reason for Visit:
+
+*Please select the document(s) you wish to upload and click "Submit Claim" to send your claim.
+
+
+
+
+*I certify the information in this claim submission is complete and accurate.
+WARNING: Any intentional false statement in this application or willful misrepresentation is a violation of the law punished by a fine not more than 10,000, or imprisonment of not more than five years, or both. (18 U.S.C. 1001).
+"""
